@@ -40,6 +40,11 @@ app.get('/about', (req, res)=>{
         pageTitle: 'about page',
     })
 })
+app.get('/projects', (req, res)=>{
+    res.render('project.hbs', {
+        pageTitle: 'projects'
+    })
+})
 app.listen(port, ()=>{
     console.log('server is now on port 3000')
 })
